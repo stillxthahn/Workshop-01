@@ -1,160 +1,160 @@
 [
 {
-	"uri": "//localhost:1313/",
+	"uri": "//localhost:64789/",
 	"title": "Deploy single service with Elastic Container Service and RDS",
 	"tags": [],
 	"description": "",
 	"content": "Deploy single service with Elastic Container Service and RDS Overall In this workshop, we will deploy a single service with Elastic Container Service and RDS. Then find out the definition, feature of each service used in this architecture.\nContent Introduction Preparation Create database Deploy single service on ECS Clean up resources "
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/3.1-createdbsubnetgroup/",
+	"uri": "//localhost:64789/3-createdatabase/3.1-createdbsubnetgroup/",
 	"title": "Create database subnet group",
 	"tags": [],
 	"description": "",
 	"content": "Create database subnet group In this section, we will create a subnet group for database.\nSearch RDS on search bar First, we have to create Subnet groups. Choose Subnet groups on the left side of the screen and choose Create DB subnet group Configure our Subnet group as follows: Name: db-subnet-group-01 Description: db-subnet-group-01 VPC: my-workshop-01 In Add subnets section: Choose Availability Zones: us-east-1a, us-east-1b Subnets: choose our two private database subnets that we have configured in VPC section After that, choose Create We will see that we have created Subnet group successfully. We choose Database on the left side of the screen to create database "
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.1-createvpc/",
+	"uri": "//localhost:64789/2-preparation/2.1-createvpc/",
 	"title": "Create VPC",
 	"tags": [],
 	"description": "",
 	"content": "Create VPC Access AWS website and search VPC Choose Create VPC Configure the VPC as follows: Resources to create: VPC Only Name tag: my-workshop-01 IPv4 CIDR: 10.0.0.0/16 Finish creating VPC "
 },
 {
-	"uri": "//localhost:1313/1-introduction/",
+	"uri": "//localhost:64789/1-introduction/",
 	"title": "Introduction",
 	"tags": [],
 	"description": "",
 	"content": "Overview Serverless Architecture Serverless Architecture is a way to build and run applications and services without having to manage infrastructure. Our application still runs on servers, but all the server management is done by AWS. We no longer have to provision, scale, and maintain servers to run your applications, databases, and storage systems.\nContainer Container is a standard unit of software that packages up code and all its dependencies so the application runs quickly and reliably from one computing environment to another. This can be from a developer\u0026rsquo;s laptop to a test environment, from a staging environment into production, and perhaps from a physical machine in a data center to a virtual machine in a private or public cloud.\nA container includes the application and all of its dependencies, but shares the kernel with other containers, which is different from Virtual Machines. It runs as an isolated process in user space on the host operating system, sharing just the kernel.\nAmazon Elastic Container Service (ECS) Amazon ECS is a highly scalable, high-performance container orchestration service that supports Docker containers and allows you to easily run and scale contain\terized applications on AWS.\nAmazon Elastic Container Registry (ECR) Amazon ECR is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images.\nAWS Fargate AWS Fargate is a serverless compute engine for containers that works with both Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).\n"
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/4.1-prerequisite/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/4.1-prerequisite/",
 	"title": "Prerequisite",
 	"tags": [],
 	"description": "",
 	"content": "Prerequisite First, we have to clone the initial application Right click and select Git Bash Here Run the following command to clone the application\ngit clone https://github.com/stillxthahn/FCJ-01-backend.git Modify Dockerfile and fill in the following information. Replace YOUR_RDS_ENDPOINT and YOUR_RDS_PORT with your RDS endpoint and port ENV RDS_HOSTNAME=YOUR_RDS_ENDPOINT\rENV RDS_PORT=YOUR_RDS_PORT\rENV RDS_DB_NAME=todolist\rENV RDS_USERNAME=admin\rENV RDS_PASSWORD=12345678 Download user security credentials It is best practice to create a new user with the necessary permissions for the application and download its credentials. But for this workshop only, we will use the root user.\nAccess Security Credentials Choose Creat Access Key Download the .csv file and Done "
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/3.2-createdbinstances/",
+	"uri": "//localhost:64789/3-createdatabase/3.2-createdbinstances/",
 	"title": "Create database instances",
 	"tags": [],
 	"description": "",
 	"content": "Create database instances In this section, we will create database instances.\nChoose Create database Configure our Database as follows: Choose a database creation method: Standard Create Engine options: MySQL Templates: Free tier We can choose Dev/Test or Production templates to enable Multi-AZ DB instance, which accquire high availability and data redundancy. In this workshop, we will use the Free tier template to save cost.\nDB instance identifier: workshop-db-01 Master username: admin Credentials management: Self managed Master password: 12345678 Confirm master password: 12345678 Compute resource: Don’t connect to an EC2 compute resource Network type: IPv4 Virtual private cloud (VPC): my-workshop-01 DB subnet group: db-subnet-group-01 Public access: No VPC security group: Choose existing Existing VPC security groups: database-sg-01 Availability zone: us-east-1a In Additional configuration, we set initial database name as workshopdb Choose Create database and finish the process After creating the database, we connect to the database instance by using MySQL Workbench. In order to test connection, we need to: Turn on DNS hostnames for our VPC; Enable Publicly Accessible in our RDS Instance; Add a new route with destination 0.0.0.0/0 and target internet gateway in database route table. After testing, we should disable it to ensure security.\nMove to VPC section, choose our my-workshop-01 VPC and select Edit VPC Settings in Actions tab. In DNS settings section, choose Enable DNS hostnames and Save Move to RDS section, choose current RDS instance Choose Modify In Additional Configuration, choose Publicly Accessible Choose Continue Choose Apply immediately and Modify DB instance Now, we can connect to our RDS instance by using MySQL Workbench. Open MySQL Workbench and open a connection to our RDS instance. Connection Name: workshop-db-01 Hostname: our endpoint of RDS instance Port: 3306 Username: admin Password: 12345678 Finally, choose Test Connection Our connection should be like this: "
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.2-createsubnets/",
+	"uri": "//localhost:64789/2-preparation/2.2-createsubnets/",
 	"title": "Create subnets",
 	"tags": [],
 	"description": "",
 	"content": "Create subnets After creating VPC, we continue create subnets. First, choose Subnets in current dashboard Choose Create subnet Choose recent VPC that you have just created After choosing VPC, we will configure the subnet as follows: Subnet name: public-subnet-01 Availability Zone: choose US East (N. Virginia) / us-east-1a IPv4 subnet CIDR block: 10.0.1.0/24 Choose Add new subnet and perform same configuration for other subnets: public-subnet-02 in US East (N. Virginia) / us-east-1b withCIDR 10.0.2.0/24 private-subnet-01 in US East (N. Virginia) / us-east-1a with CIDR 10.0.3.0/24 private-subnet-02 in US East (N. Virginia) / us-east-1b with CIDR 10.0.4.0/24 private-db-subnet-01 in US East (N. Virginia) / us-east-1a with CIDR 10.0.5.0/24 private-db-subnet-02 in US East (N. Virginia) / us-east-1b with CIDR 10.0.6.0/24 Choose Create subnet to finish creating subnets After creating subnets, you can see the result as follows: Next, we enable public IPv4 address for two public subnets. We choose each public subnet and choose Actions \u0026gt; Edit subnet settings Choose Enable auto-assign public IPv4 address and choose Save We do the same for public-subnet-01. After that, we can see the result as follows: "
 },
 {
-	"uri": "//localhost:1313/2-preparation/",
+	"uri": "//localhost:64789/2-preparation/",
 	"title": "Preparation ",
 	"tags": [],
 	"description": "",
 	"content": " In this section, we will setup the nessessary resources for the workshop.\nContent Create VPC Create Subnets Create Internet Gateway Create NAT Gateway Create Route Tables Create Security Groups "
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/4.2-pushimagetoecr/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/4.2-pushimagetoecr/",
 	"title": "Push image to ECR",
 	"tags": [],
 	"description": "",
 	"content": "Push image to ECR In this step, we will push the Docker image to the Amazon Elastic Container Registry (ECR) service.\nAmazon ECR is a fully managed Docker container registry that makes it easy for developers to store, manage, and deploy Docker container images. Amazon ECR is integrated with Amazon Elastic Container Service (ECS), simplifying your development to production workflow.\nCreate a new repository in Amazon Elastic Container Registry (ECR). Go to the ECR service. Choose Create Enter the repository name docker-container-01 and choose Create Finish creating the repository Configure AWS CLI with your credentials Install AWS CLI using the following command in Command Prompt msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi After the installation is complete, open the Command Prompt and run the following command to check the version of AWS CLI aws --version Following the instructions to install AWS CLI Next, we will configure the AWS CLI with your credentials using following command aws configure Enter your Access Key ID, Secret Access Key, Default region name, and Default output format. AWS Access Key ID [None]: EXAMPLE\rAWS Secret Access Key [None]: EXAMPLE\rDefault region name [None]: us-east-1\rDefault output format [None]: json Back to ECR dashboard, choose the repository you created and click on View push commands You will see the commands to push the Docker image to the repository. Run the commands in the Terminal at the root directory of the project. Run docker build -t docker-container-01 . You can use docker images to review the images that have been built After the build completes, tag your image so you can push the image to our repository Push your image to the repository Reload the ECR dashboard and you will see the image has been pushed to the repository "
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/3.3-connecttodatabase/",
+	"uri": "//localhost:64789/3-createdatabase/3.3-connecttodatabase/",
 	"title": "Connect to database",
 	"tags": [],
 	"description": "",
 	"content": "Connect to database In this section, we will initialize our RDS with MySQL workbench\nFirst, we will connect with RDS and create our database schema with following script CREATE DATABASE todolist; USE todolist;\rCREATE TABLE todos ( id INT AUTO_INCREMENT, task VARCHAR(255), progress VARCHAR(255), note VARCHAR(255), PRIMARY KEY (id) ); Next, we will use some basic Python code to insert 100 rows of data Install the required Python packages: pip install redis mysql-connector-python faker\nExecute the following Python script to insert 100 rows of data. Replat YOUR_RDS_ENDPOINT with your RDS Endpoint\nfrom faker import Faker\rimport mysql.connector\rimport time\rimport random\rfake = Faker()\r# Connect to your MySQL database\rconnection = mysql.connector.connect(\rhost=YOUR_RDS_ENDPOINT,\ruser=\u0026#34;admin\u0026#34;,\rpassword=\u0026#34;12345678\u0026#34;,\rdatabase=\u0026#34;todolist\u0026#34;\r)\rconnection.autocommit = False\rcursor = connection.cursor()\rstart_time = time.time()\rbatch_size = 10\rtodos = []\rfor _ in range(100):\rtask = fake.sentence(nb_words=6)\rprogress = random.choice([\u0026#34;ON GOING\u0026#34;, \u0026#34;DONE\u0026#34;])\rnote = fake.sentence(nb_words=10)\rtodos.append((task, progress, note))\rif len(todos) \u0026gt;= batch_size:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rtodos = [] if todos:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rconnection.commit()\rcursor.close()\rconnection.close() Using MySQL Workbench, we can see that the data has been inserted into the database. "
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/4.3-createalb/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/4.3-createalb/",
 	"title": "Create Application Load Balancer",
 	"tags": [],
 	"description": "",
 	"content": "Create Application Load Balancer In this section, we will create an ALB to forward the incoming traffic to the private ECS cluster. First, we have to set Outbound rule in the security group of the ALB to allow the traffic from the ALB to the ECS cluster.\nSearch Load Balancers in the AWS Management Console and click on the Create Load Balancer button. Choose Application Load Balancer Name: docker-container-alb In Network mapping, select the VPC and the subnets. VPC: my-workshop-01 Availability Zones: us-east-1a and us-east-1b Subnet: public-subnet-01 and public-subnet-02 Security group: alb-sg-01 In Listeners and routing section, we create a target group by choosing Create target group This will lead you to the Create target group page. Configure the target group as shown below and click on the Create button. Target type: Instances Target group name: alb-tg-01 VPC: my-workshop-01 Protocol version: HTTP1 Healthy threshold: 2 Unhealthy threshold: 5 Interval: 10 Choose Next Choose Create target group Back to the Create Load Balancer page: Click on Reload button and choose the target group that we have just created. Finally, click on the Create load balancer button. "
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/",
+	"uri": "//localhost:64789/3-createdatabase/",
 	"title": "Create database with RDS",
 	"tags": [],
 	"description": "",
 	"content": "Overview In this step, we will create databases with RDS, will a replica. We will also implement ElasticCache to provide caching for the database.\nAmazon Relational Database Service (RDS) Amazon RDS is a managed database service that helps you quickly create relational databases and automates backups and failovers so you don\u0026rsquo;t have to wake up in the middle of the night to bring a database back up.\nAmazon ElasticCache Amazon ElasticCache is an in-memory caching that provides microsecond read and write latency. ElastiCache is compatible with Redis and Memcached. We are going to be using Redis with ElasticCache.\n"
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.3-createigw/",
+	"uri": "//localhost:64789/2-preparation/2.3-createigw/",
 	"title": "Create Internet Gateway",
 	"tags": [],
 	"description": "",
 	"content": "Create Internet Gateway After create subnet, we continue create Internet Gateway to enable our instances in VPC to connect to the internet. First, choose Internet Gateways in current dashboard and choose Create internet gateway Set name for your IGW and click Create internet gateway Name tag: workshop-igw-01 Next, we attach the IGW to our VPC. Choose Actions and Attach to VPC Available VPCs: my-workshop-01 Choose Attach internet gatewat Finish creating IGW "
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/4.4-createecscluster/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/4.4-createecscluster/",
 	"title": "Create ECS Cluster",
 	"tags": [],
 	"description": "",
 	"content": "Create ECS Cluster In this section, we will create an ECS cluster to run the serverless application.\nGo to the ECS console and click on the Create Cluster button. Configure the cluster as shown below and click on the Create button. Cluster name: docker-container-ecs In infrastructure, select AWS Fargate (serverless) Next, we create a task definition. In AWS ECS, a task definition is a blueprint that specifies how Docker containers should be configured and run, detailing the Docker images, CPU and memory requirements, networking settings like port mappings, environment variables, and data volumes.\nClick Task Definition and choose Create new Task Definition. Configure the task definition as shown below and click on the Create button. Task definition family: docker-container-task Launch type: FARGATE Task execution role: ecsTaskExecutionRole. You can choose Create new role if you don\u0026rsquo;t have one. Next configure the container definition as shown below: Name: container-01 Image URL: you can find the recent repository URL in the ECR repository. Port mappings: 8000 Choose Create "
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.4-createnatgw/",
+	"uri": "//localhost:64789/2-preparation/2.4-createnatgw/",
 	"title": "Create NAT Gateway",
 	"tags": [],
 	"description": "",
 	"content": "Create NAT Gateway Next, we create NAT Gateway to help our private instances connect to the Internet. First, choose NAT Gateways in current dashboard and choose Create NAT gateway Configure NAT Gateway Name: workshop-natgw-01 Subnet: public-subnet-01 Connectivity type: Public We also need to create a new Elastic IP Address for our NAT Gateway. Choose Allocate Elastic IP Finish the configuration by choosing Create NAT Gateway Next, we attach the IGW to our VPC. Choose Actions and Attach to VPC Available VPCs: my-workshop-01 Choose Attach internet gatewat Finish creating IGW "
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/",
 	"title": "Deploy single service on ECS",
 	"tags": [],
 	"description": "",
 	"content": "Deploy simple application In this section, we will deploy simple NodeJs application to AWS ECS using Fargate\n"
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/3.4-cachetesting/",
+	"uri": "//localhost:64789/3-createdatabase/3.4-cachetesting/",
 	"title": "Insert data into database",
 	"tags": [],
 	"description": "",
 	"content": "Insert data into database First, we have to install the required Python packages pip install redis mysql-connector-python faker Next, we will create a Python script to query data from RDS and dump it into JSON. We will use the following code (replace host with your RDS Endpoint):\nimport mysql.connector\rimport time\rimport random\rfake = Faker()\r# Connect to your MySQL database\rconnection = mysql.connector.connect(\rhost=YOUR_RDS_ENDPOINT,\ruser=\u0026#34;admin\u0026#34;,\rpassword=\u0026#34;12345678\u0026#34;,\rdatabase=\u0026#34;todolist\u0026#34;\r)\rconnection.autocommit = False\rcursor = connection.cursor()\rstart_time = time.time()\rbatch_size = 1000\rtodos = []\rfor _ in range(210000):\rtask = fake.sentence(nb_words=6)\rprogress = random.choice([\u0026#34;ON GOING\u0026#34;, \u0026#34;DONE\u0026#34;])\rnote = fake.sentence(nb_words=10)\rtodos.append((task, progress, note))\rif len(todos) \u0026gt;= batch_size:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rtodos = [] if todos:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rconnection.commit()\rcursor.close()\rconnection.close() Using MySQL Workbench, we can see that the data has been inserted into the database. "
 },
 {
-	"uri": "//localhost:1313/5-cleanup/",
+	"uri": "//localhost:64789/5-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
 	"description": "",
 	"content": "We will take the following steps to delete the resources we created in this exercise.\nDelete RDS instance Go to RDS service Choose your RDS instance Click Actions. Click Delete. Delete ECS Cluster Go to ECS service management console Choose your ECS cluster Click Delete Enter deletion confirmation text Click Delete Task Definition Access Task Definitions in the ECS service management console. Click on the task definition created for this lab. Choose all revisions of the task definition. Click Actions Click Deregister. Delete Load Balancer Go to Load Balancer service management console Mark the Load Balancer created for this lab. Click Actions. Click Delete load balancer. Type confirm Click Delete Delete NAT Gateway Go to NAT Gateway service management console Choose the NAT Gateway created for this lab. Click Actions. Click Delete NAT Gateway. Click Delete. Delete Subnets and ENI Go to Network Interfaces service management console.\nSelect the Network Interface created for this lab. Click Action Click Detach. Click Delete. Go to Subnets service management console.\nSelect the Subnet created for this lab. Click Action Click Delete. "
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.5-createroutetables/",
+	"uri": "//localhost:64789/2-preparation/2.5-createroutetables/",
 	"title": "Create Route tables",
 	"tags": [],
 	"description": "",
 	"content": "Create Route tables Next, we create Route tables to direct our private instances to the internet. First, choose Route tables in current dashboard and choose Create Route table Conofigure Route tables Name: public-route-table VPC: my-workshop-01 Choose Create route table Next, we add subnets to our route table. Choose Subnet associations and Edit subnet associations Choose two public subnets and Save associations Next, we add routes to our route table. Choose Routes and Edit routes Configurate route: Destination: 0.0.0.0/0 Target: Internet Gateway Target: workshop-igw-01 Choose Save Changes Continue to add private route table for private subnets with the same process In Subnet associations, choose our two private subnets In Route, we route our private subnets to the internet through NAT Gateway We also create our route table for database subnets Choose our two private database subnets Routing these subnets to the internet through NAT Gateway "
 },
 {
-	"uri": "//localhost:1313/4-deployserverlessapplication/4.5-createservice/",
+	"uri": "//localhost:64789/4-deployserverlessapplication/4.5-createservice/",
 	"title": "Create Service",
 	"tags": [],
 	"description": "",
 	"content": "Create service In this section, we will create a service to run our containerized application on the ECS cluster.\nIn order to pull image from ECR, we have to add Outbound rule for our private subnet.\nGo back to Cluster tab, choose our cluster docker-container-ecs In service tab, choose Create button Compute options: Launch type Launch type: FARGATE Application type: Service Family: our newly created task definition docker-container-task Revision: your latest revision Service name: docker-service-01 VPC: my-workshop-01 Subnets: our private subnets Choose Use an existing security group and choose alb-sg-01 Turn off public IP to secure our service Load balancer type: Application Load Balancer Container: choose container-01 8000:8000 Choose Use an existing load balancer and choose workshop-alb-01 Choose Use an existing listener and choose 80:HTTP Choose Create new target group Target group name: single-service-01 Protocol: HTTP Path pattern: /todos to route all traffic to our root path Evaluation order: 1 Health check path: /todos Choose Create button After a few minutes, our service will be up and running. Click on the service name to see the details Click View load balancer to see the details of the load balancer Copy DNS name and paste it to the browser with the path /todos to see the result "
 },
 {
-	"uri": "//localhost:1313/2-preparation/2.6-createsecuritygroups/",
+	"uri": "//localhost:64789/2-preparation/2.6-createsecuritygroups/",
 	"title": "Create Security groups",
 	"tags": [],
 	"description": "",
 	"content": "Create security groups In this section, we will create security groups for our Application Load Balancer, Private Subnets (Containers), and Private Database Subnets.\nSecurity groups for Application Load Balancer Choose Security groups on the left side of the screen and choose Create security group Configure our ALB Security group as follows: Security group name: alb-sg-01 Description: Internet facing ALB VPC: my-workshop-01 Add Inbound rules: Type: HTTP; Source: Anywhere-IPv4 Type: SSH; Source: My IP Type: All ICMP - IPv4; Source: Anywhere-IPv4 Type: Custom TCP; Port range: 8000; Source: Anywhere Choose Create security group Security groups for Private Subnets (Containers) Do the same process as above, but configure Security group as follows: Security group name: container-sg-01 Description: Private containers VPC: my-workshop-01 Add Inbound rules: Type: Custom TCP; Port range: 8000; Source: Anywhere Type: Custom TCP; Port range: 8080; Source: Custom - alb-sg-01 Type: Custom TCP; Port range: 8080; Source: Anywhere-IPv4 Type: Custom TCP; Port range: 8080; Source: My IP Choose Create security group Security groups for Private Databases Do the same process as above, but configure Security group as follows: Security group name: container-sg-01 Description: Private containers VPC: my-workshop-01 Add Inbound rules: Type: MYSQL/Aurora; Source: Custom - alb-sg-01 Type: All traffic; Source: Anywhere-IPv4 Type: Custom TCP; Port range: 8080; Source: Anywhere-IPv4 Choose Create security group All traffic is for tesing purpose only. In production, you should limit the traffic to the necessary ports only.\nFinishing creating security groups: "
 },
 {
-	"uri": "//localhost:1313/categories/",
+	"uri": "//localhost:64789/categories/",
 	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""
 },
 {
-	"uri": "//localhost:1313/tags/",
+	"uri": "//localhost:64789/tags/",
 	"title": "Tags",
 	"tags": [],
 	"description": "",
