@@ -36,7 +36,7 @@ pre : " <b> 3.4. </b> "
 	batch_size = 1000
 	todos = []
 
-	for _ in range(210000):
+	for _ in range(1000):
 		task = fake.sentence(nb_words=6)
 		progress = random.choice(["ON GOING", "DONE"])
 		note = fake.sentence(nb_words=10)
