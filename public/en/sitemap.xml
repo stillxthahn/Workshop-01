@@ -28,16 +28,6 @@
     <loc>//localhost:1313/2-preparation/2.2-createsubnets/</loc>
   </url><url>
     <loc>//localhost:1313/2-preparation/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/2-preparation/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/2-preparation/"
-                />
   </url><url>
     <loc>//localhost:1313/4-deployserverlessapplication/4.2-pushimagetoecr/</loc>
   </url><url>
@@ -46,16 +36,6 @@
     <loc>//localhost:1313/4-deployserverlessapplication/4.3-createalb/</loc>
   </url><url>
     <loc>//localhost:1313/3-createdatabase/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/3-createdatabase/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/3-createdatabase/"
-                />
   </url><url>
     <loc>//localhost:1313/2-preparation/2.3-createigw/</loc>
   </url><url>
@@ -64,18 +44,6 @@
     <loc>//localhost:1313/2-preparation/2.4-createnatgw/</loc>
   </url><url>
     <loc>//localhost:1313/4-deployserverlessapplication/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="vi"
-                href="//localhost:1313/vi/4-deployserverlessapplication/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="//localhost:1313/4-deployserverlessapplication/"
-                />
-  </url><url>
-    <loc>//localhost:1313/3-createdatabase/3.4-cachetesting/</loc>
   </url><url>
     <loc>//localhost:1313/5-cleanup/</loc>
     <lastmod>1970-01-01T07:33:42+07:00</lastmod>
