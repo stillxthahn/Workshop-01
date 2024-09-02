@@ -64,7 +64,7 @@ CREATE TABLE todos ( id INT AUTO_INCREMENT, task VARCHAR(255), progress VARCHAR(
 	```
 
 3. Using MySQL Workbench, we can see that the data has been inserted into the database.
-![ConnectPrivate](/images/3-Createdatabase/3.3-connecttodatabase/001-connecttodatabase.png)
+![ConnectPrivate](/images/3-Createdatabase/3.4-cachetesting/001-cachetesting.png)
 
   
 

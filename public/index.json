@@ -112,13 +112,6 @@
 	"content": "Deploy simple application In this section, we will deploy simple NodeJs application to AWS ECS using Fargate\n"
 },
 {
-	"uri": "//localhost:1313/3-createdatabase/3.4-cachetesting/",
-	"title": "Insert data into database",
-	"tags": [],
-	"description": "",
-	"content": "Insert data into database First, we have to install the required Python packages pip install redis mysql-connector-python faker Next, we will create a Python script to query data from RDS and dump it into JSON. We will use the following code (replace host with your RDS Endpoint):\nimport mysql.connector\rimport time\rimport random\rfake = Faker()\r# Connect to your MySQL database\rconnection = mysql.connector.connect(\rhost=YOUR_RDS_ENDPOINT,\ruser=\u0026#34;admin\u0026#34;,\rpassword=\u0026#34;12345678\u0026#34;,\rdatabase=\u0026#34;todolist\u0026#34;\r)\rconnection.autocommit = False\rcursor = connection.cursor()\rstart_time = time.time()\rbatch_size = 1000\rtodos = []\rfor _ in range(1000):\rtask = fake.sentence(nb_words=6)\rprogress = random.choice([\u0026#34;ON GOING\u0026#34;, \u0026#34;DONE\u0026#34;])\rnote = fake.sentence(nb_words=10)\rtodos.append((task, progress, note))\rif len(todos) \u0026gt;= batch_size:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rtodos = [] if todos:\rcursor.executemany(\u0026#34;INSERT INTO todos (task, progress, note) VALUES (%s, %s, %s)\u0026#34;, todos)\rconnection.commit()\rcursor.close()\rconnection.close() Using MySQL Workbench, we can see that the data has been inserted into the database. "
-},
-{
 	"uri": "//localhost:1313/5-cleanup/",
 	"title": "Clean up resources",
 	"tags": [],
