@@ -10,14 +10,15 @@ pre : " <b> 4.1 </b> "
 
 1. First, we have to clone the initial application
  - Right click and select **Git Bash Here**
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/001-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/001-prerequisite.png)
 
  - Run the following command to clone the application
 ```
 git clone https://github.com/stillxthahn/FCJ-01-backend.git
 ```
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/002-prerequisite.png)
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/003-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/002-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/003-prerequisite.png)
+
  - Modify Dockerfile and fill in the following information. Replace **YOUR_RDS_ENDPOINT** and **YOUR_RDS_PORT** with your **RDS endpoint** and **port**
 ```
 ENV RDS_HOSTNAME=YOUR_RDS_ENDPOINT
@@ -26,7 +27,7 @@ ENV RDS_DB_NAME=todolist
 ENV RDS_USERNAME=admin
 ENV RDS_PASSWORD=12345678
 ``` 
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/008-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/008-prerequisite.png)
 
 2. Download user security credentials
 
@@ -37,10 +38,14 @@ It is best practice to create a new user with the necessary permissions for the 
 {{%/notice%}}
 
  - Access **Security Credentials**
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/004-prerequisite.png)
+
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/004-prerequisite.png)
+
  - Choose **Creat Access Key**
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/005-prerequisite.png)
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/006-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/005-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/006-prerequisite.png)
+
  - Download the **.csv** file and **Done**
-![ConnectPrivate](/4-Deployserverlessapplication/images/4.1-prerequisite/007-prerequisite.png)
+![ConnectPrivate](/images/4-Deployserverlessapplication/4.1-prerequisite/007-prerequisite.png)
+
 

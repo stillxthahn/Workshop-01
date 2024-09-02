@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Deploy single service on ECS on AWS System Manager</title>
-    <link>//localhost:64789/4-deployserverlessapplication/</link>
+    <link>//localhost:1313/4-deployserverlessapplication/</link>
     <description>Recent content in Deploy single service on ECS on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:64789/4-deployserverlessapplication/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/4-deployserverlessapplication/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

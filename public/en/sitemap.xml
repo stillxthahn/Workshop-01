@@ -2,112 +2,112 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:64789/</loc>
+    <loc>//localhost:1313/</loc>
     <lastmod>1970-01-01T07:33:42+07:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/"
+                href="//localhost:1313/vi/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/"
+                href="//localhost:1313/"
                 />
   </url><url>
-    <loc>//localhost:64789/3-createdatabase/3.1-createdbsubnetgroup/</loc>
+    <loc>//localhost:1313/3-createdatabase/3.1-createdbsubnetgroup/</loc>
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.1-createvpc/</loc>
+    <loc>//localhost:1313/2-preparation/2.1-createvpc/</loc>
   </url><url>
-    <loc>//localhost:64789/1-introduction/</loc>
+    <loc>//localhost:1313/1-introduction/</loc>
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/4.1-prerequisite/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/4.1-prerequisite/</loc>
   </url><url>
-    <loc>//localhost:64789/3-createdatabase/3.2-createdbinstances/</loc>
+    <loc>//localhost:1313/3-createdatabase/3.2-createdbinstances/</loc>
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.2-createsubnets/</loc>
+    <loc>//localhost:1313/2-preparation/2.2-createsubnets/</loc>
   </url><url>
-    <loc>//localhost:64789/2-preparation/</loc>
+    <loc>//localhost:1313/2-preparation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/2-preparation/"
+                href="//localhost:1313/vi/2-preparation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/2-preparation/"
+                href="//localhost:1313/2-preparation/"
                 />
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/4.2-pushimagetoecr/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/4.2-pushimagetoecr/</loc>
   </url><url>
-    <loc>//localhost:64789/3-createdatabase/3.3-connecttodatabase/</loc>
+    <loc>//localhost:1313/3-createdatabase/3.3-connecttodatabase/</loc>
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/4.3-createalb/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/4.3-createalb/</loc>
   </url><url>
-    <loc>//localhost:64789/3-createdatabase/</loc>
+    <loc>//localhost:1313/3-createdatabase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/3-createdatabase/"
+                href="//localhost:1313/vi/3-createdatabase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/3-createdatabase/"
+                href="//localhost:1313/3-createdatabase/"
                 />
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.3-createigw/</loc>
+    <loc>//localhost:1313/2-preparation/2.3-createigw/</loc>
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/4.4-createecscluster/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/4.4-createecscluster/</loc>
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.4-createnatgw/</loc>
+    <loc>//localhost:1313/2-preparation/2.4-createnatgw/</loc>
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/4-deployserverlessapplication/"
+                href="//localhost:1313/vi/4-deployserverlessapplication/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/4-deployserverlessapplication/"
+                href="//localhost:1313/4-deployserverlessapplication/"
                 />
   </url><url>
-    <loc>//localhost:64789/3-createdatabase/3.4-cachetesting/</loc>
+    <loc>//localhost:1313/3-createdatabase/3.4-cachetesting/</loc>
   </url><url>
-    <loc>//localhost:64789/5-cleanup/</loc>
+    <loc>//localhost:1313/5-cleanup/</loc>
     <lastmod>1970-01-01T07:33:42+07:00</lastmod>
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.5-createroutetables/</loc>
+    <loc>//localhost:1313/2-preparation/2.5-createroutetables/</loc>
   </url><url>
-    <loc>//localhost:64789/4-deployserverlessapplication/4.5-createservice/</loc>
+    <loc>//localhost:1313/4-deployserverlessapplication/4.5-createservice/</loc>
   </url><url>
-    <loc>//localhost:64789/2-preparation/2.6-createsecuritygroups/</loc>
+    <loc>//localhost:1313/2-preparation/2.6-createsecuritygroups/</loc>
   </url><url>
-    <loc>//localhost:64789/categories/</loc>
+    <loc>//localhost:1313/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/categories/"
+                href="//localhost:1313/categories/"
                 />
   </url><url>
-    <loc>//localhost:64789/tags/</loc>
+    <loc>//localhost:1313/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/tags/"
+                href="//localhost:1313/tags/"
                 />
   </url>
 </urlset>

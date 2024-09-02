@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>//localhost:64789/vi/2-preparation/</loc>
+    <loc>//localhost:1313/vi/2-preparation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/2-preparation/"
+                href="//localhost:1313/2-preparation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/2-preparation/"
+                href="//localhost:1313/vi/2-preparation/"
                 />
   </url><url>
-    <loc>//localhost:64789/vi/3-createdatabase/</loc>
+    <loc>//localhost:1313/vi/3-createdatabase/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/3-createdatabase/"
+                href="//localhost:1313/3-createdatabase/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/3-createdatabase/"
+                href="//localhost:1313/vi/3-createdatabase/"
                 />
   </url><url>
-    <loc>//localhost:64789/vi/4-deployserverlessapplication/</loc>
+    <loc>//localhost:1313/vi/4-deployserverlessapplication/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/4-deployserverlessapplication/"
+                href="//localhost:1313/4-deployserverlessapplication/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/4-deployserverlessapplication/"
+                href="//localhost:1313/vi/4-deployserverlessapplication/"
                 />
   </url><url>
-    <loc>//localhost:64789/vi/</loc>
+    <loc>//localhost:1313/vi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/"
+                href="//localhost:1313/vi/"
                 />
   </url><url>
-    <loc>//localhost:64789/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>//localhost:64789/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="//localhost:64789/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="//localhost:64789/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>

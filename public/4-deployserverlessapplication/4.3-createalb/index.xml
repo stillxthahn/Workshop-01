@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Create Application Load Balancer on AWS System Manager</title>
-    <link>//localhost:64789/4-deployserverlessapplication/4.3-createalb/</link>
+    <link>//localhost:1313/4-deployserverlessapplication/4.3-createalb/</link>
     <description>Recent content in Create Application Load Balancer on AWS System Manager</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <atom:link href="//localhost:64789/4-deployserverlessapplication/4.3-createalb/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="//localhost:1313/4-deployserverlessapplication/4.3-createalb/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
