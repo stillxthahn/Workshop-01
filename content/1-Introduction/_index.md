@@ -15,7 +15,7 @@ pre : " <b> 1. </b> "
 
 A container includes the application and all of its dependencies, but shares the kernel with other containers, which is different from Virtual Machines. It runs as an isolated process in user space on the host operating system, sharing just the kernel.
 
-![ConnectPrivate](/images/1.Introduction/001-container.png) 
+![ConnectPrivate](/images/1-Introduction/001-container.png) 
 
 ### Amazon Elastic Container Service (ECS)
 **Amazon ECS** is a highly scalable, high-performance **container orchestration** service that supports **Docker containers** and allows you to easily run and scale contain	erized applications on AWS.

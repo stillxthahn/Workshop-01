@@ -12,21 +12,21 @@
     <title>Create subnets :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254095" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254095" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254095" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254095" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254095" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254095" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254095" rel="stylesheet">
-    <link href="/css/theme.css?1725254095" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254095" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254095" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254095"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254095"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254095"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254095"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -837,51 +837,51 @@
 	<h3 id="create-subnets">Create subnets</h3>
 <ol>
 <li>After creating VPC, we continue create subnets. First, choose <strong>Subnets</strong> in current dashboard
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/001-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/001-createsubnets.png"></li>
 <li>Choose <strong>Create subnet</strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/002-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/002-createsubnets.png"></li>
 <li>Choose recent VPC that you have just created
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/003-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/003-createsubnets.png"></li>
 <li>After choosing VPC, we will configure the subnet as follows:</li>
 </ol>
 <ul>
 <li><strong>Subnet name</strong>: <strong><code>public-subnet-01</code></strong></li>
 <li><strong>Availability Zone</strong>: choose <strong>US East (N. Virginia) / us-east-1a</strong></li>
 <li><strong>IPv4 subnet CIDR block</strong>: <strong><code>10.0.1.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/004-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/004-createsubnets.png"></li>
 </ul>
 <ol start="5">
 <li>Choose <strong>Add new subnet</strong> and perform same configuration for other subnets:
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/005-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/005-createsubnets.png"></li>
 </ol>
 <ul>
 <li><strong><code>public-subnet-02</code></strong> in <strong>US East (N. Virginia) / us-east-1b</strong> withCIDR <strong><code>10.0.2.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/006-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/006-createsubnets.png"></li>
 <li><strong><code>private-subnet-01</code></strong> in <strong>US East (N. Virginia) / us-east-1a</strong> with CIDR <strong><code>10.0.3.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/007-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/007-createsubnets.png"></li>
 <li><strong><code>private-subnet-02</code></strong> in <strong>US East (N. Virginia) / us-east-1b</strong> with CIDR <strong><code>10.0.4.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/008-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/008-createsubnets.png"></li>
 <li><strong><code>private-db-subnet-01</code></strong> in <strong>US East (N. Virginia) / us-east-1a</strong> with CIDR <strong><code>10.0.5.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/009-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/009-createsubnets.png"></li>
 <li><strong><code>private-db-subnet-02</code></strong> in <strong>US East (N. Virginia) / us-east-1b</strong> with CIDR <strong><code>10.0.6.0/24</code></strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/010-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/010-createsubnets.png"></li>
 </ul>
 <ol start="6">
 <li>Choose <strong>Create subnet</strong> to finish creating subnets
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/011-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/011-createsubnets.png"></li>
 <li>After creating subnets, you can see the result as follows:
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/012-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/012-createsubnets.png"></li>
 <li>Next, we enable <strong>public IPv4 address</strong> for two public subnets.</li>
 </ol>
 <ul>
 <li>We choose each public subnet and choose <strong>Actions</strong> &gt; <strong>Edit subnet settings</strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/013-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/013-createsubnets.png"></li>
 <li>Choose <strong>Enable auto-assign public IPv4 address</strong> and choose <strong>Save</strong>
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/014-createsubnets.png">
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/015-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/014-createsubnets.png">
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/015-createsubnets.png"></li>
 <li>We do the same for <strong><code>public-subnet-01</code></strong>. After that, we can see the result as follows:
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/016-createsubnets.png">
-<img alt="Subnets" src="/2-Preparation/images/2.2-createsubnets/017-createsubnets.png"></li>
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/016-createsubnets.png">
+<img alt="Subnets" src="/images/2-Preparation/2.2-createsubnets/017-createsubnets.png"></li>
 </ul>
 
 
@@ -1277,19 +1277,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254095"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254095"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254095"></script>
-    <script src="/js/jquery.sticky.js?1725254095"></script>
-    <script src="/js/featherlight.min.js?1725254095"></script>
-    <script src="/js/highlight.pack.js?1725254095"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254095"></script>
-    <script src="/js/learn.js?1725254095"></script>
-    <script src="/js/hugo-learn.js?1725254095"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254095" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254095"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

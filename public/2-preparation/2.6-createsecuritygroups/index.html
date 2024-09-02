@@ -12,21 +12,21 @@
     <title>Create Security groups :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254095" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254095" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254095" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254095" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254095" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254095" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254095" rel="stylesheet">
-    <link href="/css/theme.css?1725254095" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254095" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254095" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254095"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254095"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254095"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254095"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -841,13 +841,13 @@
 </ol>
 <ul>
 <li>Choose <strong>Security groups</strong> on the left side of the screen and choose <strong>Create security group</strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/001-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/001-createsecuritygroups.png"></li>
 <li>Configure our <strong>ALB Security group</strong> as follows:
 <ul>
 <li><strong>Security group name</strong>: <strong><code>alb-sg-01</code></strong></li>
 <li><strong>Description</strong>: <strong><code>Internet facing ALB</code></strong></li>
 <li><strong>VPC</strong>: <strong><code>my-workshop-01</code></strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/002-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/002-createsecuritygroups.png"></li>
 </ul>
 </li>
 <li>Add <strong>Inbound rules</strong>:
@@ -856,9 +856,9 @@
 <li>Type: <strong>SSH</strong>; Source: <strong>My IP</strong></li>
 <li>Type: <strong>All ICMP - IPv4</strong>; Source: <strong>Anywhere-IPv4</strong></li>
 <li>Type: <strong>Custom TCP</strong>; Port range: <strong>8000</strong>; Source: <strong>Anywhere</strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/003-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/003-createsecuritygroups.png"></li>
 <li>Choose <strong>Create security group</strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
 </ul>
 </li>
 </ul>
@@ -871,7 +871,7 @@
 <li><strong>Security group name</strong>: <strong><code>container-sg-01</code></strong></li>
 <li><strong>Description</strong>: <strong><code>Private containers</code></strong></li>
 <li><strong>VPC</strong>: <strong><code>my-workshop-01</code></strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/005-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/005-createsecuritygroups.png"></li>
 </ul>
 </li>
 <li>Add <strong>Inbound rules</strong>:
@@ -881,8 +881,8 @@
 <li>Type: <strong>Custom TCP</strong>; Port range: <strong>8080</strong>; Source: <strong>Anywhere-IPv4</strong></li>
 <li>Type: <strong>Custom TCP</strong>; Port range: <strong>8080</strong>; Source: <strong>My IP</strong></li>
 <li>Choose <strong>Create security group</strong>
-<img src="/2-Preparation/images/2.6-createsecuritygroups/006-createsecuritygroups.png">
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
+<img src="/images/2-Preparation/2.6-createsecuritygroups/006-createsecuritygroups.png">
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
 </ul>
 </li>
 </ul>
@@ -895,7 +895,7 @@
 <li><strong>Security group name</strong>: <strong><code>container-sg-01</code></strong></li>
 <li><strong>Description</strong>: <strong><code>Private containers</code></strong></li>
 <li><strong>VPC</strong>: <strong><code>my-workshop-01</code></strong>
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/007-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/007-createsecuritygroups.png"></li>
 </ul>
 </li>
 <li>Add <strong>Inbound rules</strong>:
@@ -908,14 +908,14 @@
 <div class="notices info" ><p><strong>All traffic</strong> is for tesing purpose only. In production, you should limit the traffic to the necessary ports only.</p>
 </div>
 
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/008-createsecuritygroups.png">
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/008-createsecuritygroups.png">
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/004-createsecuritygroups.png"></li>
 </ul>
 </li>
 </ul>
 <ol>
 <li>Finishing creating security groups:
-<img alt="ConnectPrivate" src="/2-Preparation/images/2.6-createsecuritygroups/009-createsecuritygroups.png"></li>
+<img alt="ConnectPrivate" src="/images/2-Preparation/2.6-createsecuritygroups/009-createsecuritygroups.png"></li>
 </ol>
 
 
@@ -1311,19 +1311,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254096"></script>
-    <script src="/js/jquery.sticky.js?1725254096"></script>
-    <script src="/js/featherlight.min.js?1725254096"></script>
-    <script src="/js/highlight.pack.js?1725254096"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254096"></script>
-    <script src="/js/learn.js?1725254096"></script>
-    <script src="/js/hugo-learn.js?1725254096"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254096" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254096"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

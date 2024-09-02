@@ -14,7 +14,7 @@ We will take the following steps to delete the resources we created in this exer
    + Choose your RDS instance
    + Click **Actions**.
    + Click **Delete**.
-![Clean](/images/001-cleanup.png)
+![Clean](/images/5-Cleanup/001-cleanup.png)
 
 
 #### Delete ECS Cluster
@@ -23,9 +23,9 @@ We will take the following steps to delete the resources we created in this exer
    + Click **Delete**
    + Enter deletion confirmation text 
    + Click **Delete**
-![Clean](/images/002-cleanup.png)
-![Clean](/images/003-cleanup.png)
-![Clean](/images/004-cleanup.png)
+![Clean](/images/5-Cleanup/002-cleanup.png)
+![Clean](/images/5-Cleanup/003-cleanup.png)
+![Clean](/images/5-Cleanup/004-cleanup.png)
 
 #### Task Definition
 
@@ -34,9 +34,9 @@ We will take the following steps to delete the resources we created in this exer
    + Choose all revisions of the task definition.
    + Click **Actions**
    + Click **Deregister**.
-![Clean](/images/005-cleanup.png)
-![Clean](/images/006-cleanup.png)
-![Clean](/images/007-cleanup.png)
+![Clean](/images/5-Cleanup/005-cleanup.png)
+![Clean](/images/5-Cleanup/006-cleanup.png)
+![Clean](/images/5-Cleanup/007-cleanup.png)
 
 #### Delete Load Balancer
 
@@ -46,8 +46,8 @@ We will take the following steps to delete the resources we created in this exer
    + Click **Delete load balancer**.
    + Type **confirm**
    + Click **Delete**
-![Clean](/images/008-cleanup.png)
-![Clean](/images/009-cleanup.png)
+![Clean](/images/5-Cleanup/008-cleanup.png)
+![Clean](/images/5-Cleanup/009-cleanup.png)
 
 #### Delete NAT Gateway
 1. Go to NAT Gateway service management console

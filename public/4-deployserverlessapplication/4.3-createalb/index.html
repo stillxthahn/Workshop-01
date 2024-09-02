@@ -12,21 +12,21 @@
     <title>Create Application Load Balancer :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254096" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254096" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254096" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254096" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254096" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254096" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254096" rel="stylesheet">
-    <link href="/css/theme.css?1725254096" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254096" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254096" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254096"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254096"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254096"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254096"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -840,46 +840,56 @@
 <div class="notices info" ><p>First, we have to set <strong>Outbound rule</strong> in the security group of the ALB to allow the traffic from the ALB to the ECS cluster.</p>
 </div>
 
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/017-createalb.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/017-createalb.png"></p>
 <ol>
 <li>Search Load Balancers in the AWS Management Console and click on the <strong>Create Load Balancer</strong> button.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/001-createalb.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/002-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/001-createalb.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/002-createalb.png"></li>
 </ol>
 <ul>
-<li>Choose <strong>Application Load Balancer</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/003-createalb.png"></li>
-<li>Name: <strong><code>docker-container-alb</code></strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/004-createalb.png"></li>
-<li>In Network mapping, select the VPC and the subnets.
+<li>
+<p>Choose <strong>Application Load Balancer</strong>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/003-createalb.png"></p>
+</li>
+<li>
+<p>Name: <strong><code>docker-container-alb</code></strong>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/004-createalb.png"></p>
+</li>
+<li>
+<p>In Network mapping, select the VPC and the subnets.</p>
 <ul>
 <li>VPC: <strong>my-workshop-01</strong></li>
 <li>Availability Zones: <strong>us-east-1a</strong> and <strong>us-east-1b</strong></li>
 <li>Subnet: <strong>public-subnet-01</strong> and <strong>public-subnet-02</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/005-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/005-createalb.png"></li>
 </ul>
 </li>
-<li>Security group: <strong>alb-sg-01</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/006-createalb.png"></li>
-<li>In <strong>Listeners and routing</strong> section, we create a target group by choosing <strong>Create target group</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/007-createalb.png"></li>
-<li>This will lead you to the <strong>Create target group</strong> page. Configure the target group as shown below and click on the <strong>Create</strong> button.
+<li>
+<p>Security group: <strong>alb-sg-01</strong>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/006-createalb.png"></p>
+</li>
+<li>
+<p>In <strong>Listeners and routing</strong> section, we create a target group by choosing <strong>Create target group</strong>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/007-createalb.png"></p>
+</li>
+<li>
+<p>This will lead you to the <strong>Create target group</strong> page. Configure the target group as shown below and click on the <strong>Create</strong> button.</p>
 <ul>
 <li>Target type: <strong>Instances</strong></li>
 <li>Target group name: <strong><code>alb-tg-01</code></strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/008-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/008-createalb.png"></li>
 <li>VPC: <strong>my-workshop-01</strong></li>
 <li>Protocol version: <strong>HTTP1</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/009-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/009-createalb.png"></li>
 <li>Healthy threshold: <strong>2</strong></li>
 <li>Unhealthy threshold: <strong>5</strong></li>
 <li>Interval: <strong>10</strong></li>
 <li>Choose <strong>Next</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/010-createalb.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/011-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/010-createalb.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/011-createalb.png"></li>
 <li>Choose <strong>Create target group</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/012-createalb.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/013-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/012-createalb.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/013-createalb.png"></li>
 </ul>
 </li>
 </ul>
@@ -888,10 +898,10 @@
 </ol>
 <ul>
 <li>Click on Reload button and choose the target group that we have just created.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/014-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/014-createalb.png"></li>
 <li>Finally, click on the <strong>Create load balancer</strong> button.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/015-createalb.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.3-createalb/016-createalb.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/015-createalb.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.3-createalb/016-createalb.png"></li>
 </ul>
 
 
@@ -1287,19 +1297,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254096"></script>
-    <script src="/js/jquery.sticky.js?1725254096"></script>
-    <script src="/js/featherlight.min.js?1725254096"></script>
-    <script src="/js/highlight.pack.js?1725254096"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254096"></script>
-    <script src="/js/learn.js?1725254096"></script>
-    <script src="/js/hugo-learn.js?1725254096"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254096" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254096"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

@@ -12,21 +12,21 @@
     <title>Create database instances :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254096" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254096" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254096" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254096" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254096" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254096" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254096" rel="stylesheet">
-    <link href="/css/theme.css?1725254096" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254096" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254096" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254096"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254096"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254096"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254096"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -838,41 +838,41 @@
 <p>In this section, we will create database instances.</p>
 <ol>
 <li>Choose <strong>Create database</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/001-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/001-createdbinstances.png"></li>
 <li>Configure our <strong>Database</strong> as follows:</li>
 </ol>
 <ul>
 <li>Choose a database creation method: <strong>Standard Create</strong></li>
 <li>Engine options: <strong>MySQL</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/002-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/002-createdbinstances.png"></li>
 <li>Templates: <strong>Free tier</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/003-createdbinstances.png">
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/003-createdbinstances.png">
 
 <div class="notices info" ><p>We can choose <strong>Dev/Test</strong> or <strong>Production</strong> templates to enable <strong>Multi-AZ DB instance</strong>, which accquire high availability and data redundancy. In this workshop, we will use the Free tier template to save cost.</p>
 </div>
 
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/004-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/004-createdbinstances.png"></li>
 <li>DB instance identifier: <strong><code>workshop-db-01</code></strong></li>
 <li>Master username: <strong><code>admin</code></strong></li>
 <li>Credentials management: <strong>Self managed</strong></li>
 <li>Master password: <strong><code>12345678</code></strong></li>
 <li>Confirm master password: <strong><code>12345678</code></strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/005-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/005-createdbinstances.png"></li>
 <li>Compute resource: <strong>Don’t connect to an EC2 compute resource</strong></li>
 <li>Network type: <strong>IPv4</strong></li>
 <li>Virtual private cloud (VPC): <strong>my-workshop-01</strong></li>
 <li>DB subnet group: <strong>db-subnet-group-01</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/006-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/006-createdbinstances.png"></li>
 <li>Public access: <strong>No</strong></li>
 <li>VPC security group: <strong>Choose existing</strong></li>
 <li>Existing VPC security groups: <strong>database-sg-01</strong></li>
 <li>Availability zone: <strong>us-east-1a</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/007-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/007-createdbinstances.png"></li>
 <li>In Additional configuration, we set initial database name as <strong><code>workshopdb</code></strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/008-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/008-createdbinstances.png"></li>
 <li>Choose <strong>Create database</strong> and finish the process
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/009-createdbinstances.png">
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/010-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/009-createdbinstances.png">
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/010-createdbinstances.png"></li>
 </ul>
 <ol start="3">
 <li>After creating the database, we connect to the database instance by using <strong>MySQL Workbench.</strong>
@@ -883,19 +883,19 @@
 </ol>
 <ul>
 <li>Move to <strong>VPC</strong> section, choose our <strong>my-workshop-01</strong> VPC and select <strong>Edit VPC Settings</strong> in <strong>Actions</strong> tab.
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/016-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/016-createdbinstances.png"></li>
 <li>In <strong>DNS settings</strong> section, choose <strong>Enable DNS hostnames</strong> and <strong>Save</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/017-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/017-createdbinstances.png"></li>
 <li>Move to <strong>RDS</strong> section, choose current RDS instance
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/011-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/011-createdbinstances.png"></li>
 <li>Choose <strong>Modify</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/012-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/012-createdbinstances.png"></li>
 <li>In Additional Configuration, choose <strong>Publicly Accessible</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/013-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/013-createdbinstances.png"></li>
 <li>Choose <strong>Continue</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/014-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/014-createdbinstances.png"></li>
 <li>Choose <strong>Apply immediately</strong> and <strong>Modify DB instance</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/015-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/015-createdbinstances.png"></li>
 <li>Now, we can connect to our RDS instance by using <strong>MySQL Workbench</strong>.</li>
 <li>Open <strong>MySQL Workbench</strong> and open a connection to our RDS instance.
 <ul>
@@ -905,11 +905,11 @@
 <li>Username: <strong><code>admin</code></strong></li>
 <li>Password: <strong><code>12345678</code></strong></li>
 <li>Finally, choose <strong>Test Connection</strong>
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/018-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/018-createdbinstances.png"></li>
 </ul>
 </li>
 <li>Our connection should be like this:
-<img alt="ConnectPrivate" src="/3-Createdatabase/images/3.2-createdbinstances/019-createdbinstances.png"></li>
+<img alt="ConnectPrivate" src="/images/3-Createdatabase/3.2-createdbinstances/019-createdbinstances.png"></li>
 </ul>
 
 
@@ -1305,19 +1305,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254096"></script>
-    <script src="/js/jquery.sticky.js?1725254096"></script>
-    <script src="/js/featherlight.min.js?1725254096"></script>
-    <script src="/js/highlight.pack.js?1725254096"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254096"></script>
-    <script src="/js/learn.js?1725254096"></script>
-    <script src="/js/hugo-learn.js?1725254096"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254096" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254096"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

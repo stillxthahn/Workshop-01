@@ -12,21 +12,21 @@
     <title>Create Service :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254096" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254096" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254096" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254096" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254096" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254096" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254096" rel="stylesheet">
-    <link href="/css/theme.css?1725254096" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254096" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254096" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254096"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254096"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254096"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254096"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -840,33 +840,33 @@
 <div class="notices info" ><p>In order to pull image from ECR, we have to add <strong>Outbound rule</strong> for our private subnet.</p>
 </div>
 
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/009-createservice.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/009-createservice.png"></p>
 <ol>
 <li>Go back to <strong>Cluster</strong> tab, choose our cluster <strong><code>docker-container-ecs</code></strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/001-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/001-createservice.png"></li>
 <li>In service tab, choose <strong>Create</strong> button
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/002-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/002-createservice.png"></li>
 </ol>
 <ul>
 <li>Compute options: <strong>Launch type</strong></li>
 <li>Launch type: <strong>FARGATE</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/003-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/003-createservice.png"></li>
 <li>Application type: <strong>Service</strong></li>
 <li>Family: our newly created task definition <strong><code>docker-container-task</code></strong></li>
 <li>Revision: your latest revision</li>
 <li>Service name: <strong><code>docker-service-01</code></strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/004-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/004-createservice.png"></li>
 <li>VPC: <strong><code>my-workshop-01</code></strong></li>
 <li>Subnets: our private subnets</li>
 <li>Choose <strong>Use an existing security group</strong> and choose <strong><code>alb-sg-01</code></strong></li>
 <li>Turn off <strong>public IP</strong> to secure our service
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/005-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/005-createservice.png"></li>
 <li>Load balancer type: <strong>Application Load Balancer</strong></li>
 <li>Container: choose <strong>container-01 8000:8000</strong></li>
 <li>Choose <strong>Use an existing load balancer</strong> and choose <strong><code>workshop-alb-01</code></strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/006-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/006-createservice.png"></li>
 <li>Choose <strong>Use an existing listener</strong> and choose <strong>80:HTTP</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/007-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/007-createservice.png"></li>
 <li>Choose <strong>Create new target group</strong></li>
 <li>Target group name: <strong><code>single-service-01</code></strong></li>
 <li>Protocol: <strong>HTTP</strong></li>
@@ -874,19 +874,19 @@
 <li>Evaluation order: <strong>1</strong></li>
 <li>Health check path: <strong><code>/todos</code></strong></li>
 <li>Choose <strong>Create</strong> button
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/008-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/008-createservice.png"></li>
 </ul>
 <ol start="3">
 <li>After a few minutes, our service will be up and running.</li>
 </ol>
 <ul>
 <li>Click on the service name to see the details
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/010-createservice.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/011-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/010-createservice.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/011-createservice.png"></li>
 <li>Click <strong>View load balancer</strong> to see the details of the load balancer</li>
 <li>Copy <strong>DNS name</strong> and paste it to the browser with the path <code>/todos</code> to see the result
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/012-createservice.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.5-createservice/013-createservice.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/012-createservice.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.5-createservice/013-createservice.png"></li>
 </ul>
 
 
@@ -1282,19 +1282,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254096"></script>
-    <script src="/js/jquery.sticky.js?1725254096"></script>
-    <script src="/js/featherlight.min.js?1725254096"></script>
-    <script src="/js/highlight.pack.js?1725254096"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254096"></script>
-    <script src="/js/learn.js?1725254096"></script>
-    <script src="/js/hugo-learn.js?1725254096"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254096" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254096"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

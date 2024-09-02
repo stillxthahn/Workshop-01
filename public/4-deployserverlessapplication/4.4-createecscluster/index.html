@@ -12,21 +12,21 @@
     <title>Create ECS Cluster :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725254096" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725254096" rel="stylesheet">
-    <link href="/css/hybrid.css?1725254096" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725254096" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725254096" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725254096" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725254096" rel="stylesheet">
-    <link href="/css/theme.css?1725254096" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725254096" rel="stylesheet">
+    <link href="/css/nucleus.css?1725264206" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725264206" rel="stylesheet">
+    <link href="/css/hybrid.css?1725264206" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725264206" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725264206" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725264206" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725264206" rel="stylesheet">
+    <link href="/css/theme.css?1725264206" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725264206" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725254096" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725264206" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725254096"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725264206"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725254096"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725254096"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725264206"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725264206"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725254096"></script>
+<script type="text/javascript" src="/js/search.js?1725264206"></script>
 
     
   </div>
@@ -838,16 +838,16 @@
 <p>In this section, we will create an ECS cluster to run the serverless application.</p>
 <ol>
 <li>Go to the ECS console and click on the <strong>Create Cluster</strong> button.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/001-createecscluster.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/002-createecscluster.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/001-createecscluster.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/002-createecscluster.png"></li>
 </ol>
 <ul>
 <li>Configure the cluster as shown below and click on the <strong>Create</strong> button.
 <ul>
 <li>Cluster name: <strong><code>docker-container-ecs</code></strong></li>
 <li>In infrastructure, select <strong>AWS Fargate (serverless)</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/003-createecscluster.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/004-createecscluster.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/003-createecscluster.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/004-createecscluster.png"></li>
 </ul>
 </li>
 </ul>
@@ -860,14 +860,14 @@
 </ol>
 <ul>
 <li>Click <strong>Task Definition</strong> and choose <strong>Create new Task Definition</strong>.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/005-createecscluster.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/005-createecscluster.png"></li>
 <li>Configure the task definition as shown below and click on the <strong>Create</strong> button.
 <ul>
 <li>Task definition family: <strong><code>docker-container-task</code></strong></li>
 <li>Launch type: <strong><code>FARGATE</code></strong></li>
 <li>Task execution role: <strong><code>ecsTaskExecutionRole</code></strong>. You can choose <strong>Create new role</strong> if you don&rsquo;t have one.
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/006-createecscluster.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/007-createecscluster.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/006-createecscluster.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/007-createecscluster.png"></li>
 </ul>
 </li>
 <li>Next configure the container definition as shown below:
@@ -876,8 +876,8 @@
 <li>Image URL: you can find the recent repository URL in the <strong>ECR repository</strong>.</li>
 <li>Port mappings: <strong><code>8000</code></strong></li>
 <li>Choose <strong>Create</strong>
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/008-createecscluster.png">
-<img alt="Container" src="/4-Deployserverlessapplication/images/4.4-createecscluster/009-createecscluster.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/008-createecscluster.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.4-createecscluster/009-createecscluster.png"></li>
 </ul>
 </li>
 </ul>
@@ -1275,19 +1275,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725254096"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725254096"></script>
-    <script src="/js/jquery.sticky.js?1725254096"></script>
-    <script src="/js/featherlight.min.js?1725254096"></script>
-    <script src="/js/highlight.pack.js?1725254096"></script>
+    <script src="/js/clipboard.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725264206"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725264206"></script>
+    <script src="/js/jquery.sticky.js?1725264206"></script>
+    <script src="/js/featherlight.min.js?1725264206"></script>
+    <script src="/js/highlight.pack.js?1725264206"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725254096"></script>
-    <script src="/js/learn.js?1725254096"></script>
-    <script src="/js/hugo-learn.js?1725254096"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725264206"></script>
+    <script src="/js/learn.js?1725264206"></script>
+    <script src="/js/hugo-learn.js?1725264206"></script>
 
-    <link href="/mermaid/mermaid.css?1725254096" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725254096"></script>
+    <link href="/mermaid/mermaid.css?1725264206" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725264206"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
