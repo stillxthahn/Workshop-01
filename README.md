@@ -5,7 +5,7 @@ This repository contains the workshop materials for the first workshop in the Fi
 
 ![Architecture](static/images/Workshop.png)
 
-[Link to the workshop][Workshop01/Workshop01.md](https://stillxthahn-workshop-01.vercel.app)
+[Link to the workshop](https://stillxthahn-workshop-01.vercel.app)
 
 Services: **AWS Elastic Container Service**, **AWS Elastic Container Registry**, **AWS Fargate**, **Application Load Balancer**, **AWS RDS**
 
