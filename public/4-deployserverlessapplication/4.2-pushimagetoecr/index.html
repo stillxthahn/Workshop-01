@@ -12,21 +12,21 @@
     <title>Push image to ECR :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725359869" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725359869" rel="stylesheet">
-    <link href="/css/hybrid.css?1725359869" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725359869" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725359869" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725359869" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725359869" rel="stylesheet">
-    <link href="/css/theme.css?1725359869" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725359869" rel="stylesheet">
+    <link href="/css/nucleus.css?1725360174" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725360174" rel="stylesheet">
+    <link href="/css/hybrid.css?1725360174" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725360174" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725360174" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725360174" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725360174" rel="stylesheet">
+    <link href="/css/theme.css?1725360174" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725360174" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725359869" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725360174" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725359869"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725360174"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725359869"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725359869"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725360174"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725360174"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725359869"></script>
+<script type="text/javascript" src="/js/search.js?1725360174"></script>
 
     
   </div>
@@ -815,20 +815,20 @@
 <ul>
 <li>
 <p>Go to the <strong>ECR</strong> service.
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/001-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/001-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Choose <strong>Create</strong>
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/002-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/002-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Enter the repository name <strong><code>docker-container-01</code></strong> and choose <strong>Create</strong>
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/003-pushimagetoecr.png">
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/004-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/003-pushimagetoecr.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/004-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Finish creating the repository
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/005-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/005-pushimagetoecr.png"></p>
 </li>
 </ul>
 <ol>
@@ -838,12 +838,12 @@
 <li>Install <strong>AWS CLI</strong> using the following command in <strong>Command Prompt</strong></li>
 </ul>
 <pre tabindex="0"><code>msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
-</code></pre><p><img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/006-pushimagetoecr.png"></p>
+</code></pre><p><img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/006-pushimagetoecr.png"></p>
 <ul>
 <li>After the installation is complete, open the <strong>Command Prompt</strong> and run the following command to check the version of <strong>AWS CLI</strong></li>
 </ul>
 <pre tabindex="0"><code>aws --version
-</code></pre><p><img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/007-pushimagetoecr.png"></p>
+</code></pre><p><img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/007-pushimagetoecr.png"></p>
 <ul>
 <li>Following the instructions to install <strong>AWS CLI</strong></li>
 <li>Next, we will configure the <strong>AWS CLI</strong> with your credentials using following command</li>
@@ -1266,19 +1266,19 @@ Default output format [None]: json
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725359869"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725359869"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725359869"></script>
-    <script src="/js/jquery.sticky.js?1725359869"></script>
-    <script src="/js/featherlight.min.js?1725359869"></script>
-    <script src="/js/highlight.pack.js?1725359869"></script>
+    <script src="/js/clipboard.min.js?1725360174"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725360174"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725360174"></script>
+    <script src="/js/jquery.sticky.js?1725360174"></script>
+    <script src="/js/featherlight.min.js?1725360174"></script>
+    <script src="/js/highlight.pack.js?1725360174"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725359869"></script>
-    <script src="/js/learn.js?1725359869"></script>
-    <script src="/js/hugo-learn.js?1725359869"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725360174"></script>
+    <script src="/js/learn.js?1725360174"></script>
+    <script src="/js/hugo-learn.js?1725360174"></script>
 
-    <link href="/mermaid/mermaid.css?1725359869" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725359869"></script>
+    <link href="/mermaid/mermaid.css?1725360174" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725360174"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
