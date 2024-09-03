@@ -1,13 +1,13 @@
 ---
-title : "Deploy single service with Elastic Container Service and RDS"
+title : "Deploy single service with AWS Elastic Container Service and Application Load Balancer"
 date :  "`r Sys.Date()`" 
 weight : 1 
 chapter : false
 ---
-# Deploy single service with Elastic Container Service and RDS
+# Deploy single service with AWS Elastic Container Service and Application Load Balancer
 
 ### Overall
- In this workshop, we will deploy a single service with Elastic Container Service and RDS. Then find out the definition, feature of each service used in this architecture.
+ In this workshop, we will deploy a single service with Elastic Container Service and ALB. Then find out the definition, feature of each service used in this architecture.
 
 ![ConnectPrivate](/images/Workshop.png) 
 
