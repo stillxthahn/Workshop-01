@@ -12,21 +12,21 @@
     <title>Push image to ECR :: AWS System Manager</title>
 
     
-    <link href="/css/nucleus.css?1725264895" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1725264895" rel="stylesheet">
-    <link href="/css/hybrid.css?1725264895" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1725264895" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1725264895" rel="stylesheet">
-    <link href="/css/auto-complete.css?1725264895" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1725264895" rel="stylesheet">
-    <link href="/css/theme.css?1725264895" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1725264895" rel="stylesheet">
+    <link href="/css/nucleus.css?1725359869" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1725359869" rel="stylesheet">
+    <link href="/css/hybrid.css?1725359869" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1725359869" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1725359869" rel="stylesheet">
+    <link href="/css/auto-complete.css?1725359869" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1725359869" rel="stylesheet">
+    <link href="/css/theme.css?1725359869" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1725359869" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1725264895" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1725359869" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1725264895"></script>
+    <script src="/js/jquery-3.3.1.min.js?1725359869"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1725264895"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1725264895"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1725359869"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1725359869"></script>
 <script type="text/javascript">
     
         var baseurl = "\/\/localhost:1313\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1725264895"></script>
+<script type="text/javascript" src="/js/search.js?1725359869"></script>
 
     
   </div>
@@ -858,34 +858,34 @@ Default region name [None]: us-east-1
 Default output format [None]: json
 </code></pre><ol start="3">
 <li>Back to ECR dashboard, choose the repository you created and click on <strong>View push commands</strong>
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/008-pushimagetoecr.png">
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/009-pushimagetoecr.png"></li>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/008-pushimagetoecr.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/009-pushimagetoecr.png"></li>
 </ol>
 <ul>
 <li>
 <p>You will see the commands to push the Docker image to the repository. Run the commands in the Terminal at the root directory of the project.
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/010-pushimagetoecr.png">
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/011-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/010-pushimagetoecr.png">
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/011-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Run <strong>docker build -t docker-container-01 .</strong>
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/012-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/012-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>You can use <strong><code>docker images</code></strong> to review the images that have been built
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/013-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/013-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>After the build completes, tag your image so you can push the image to our repository
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/014-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/014-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Push your image to the repository
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/015-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/015-pushimagetoecr.png"></p>
 </li>
 <li>
 <p>Reload the <strong>ECR</strong> dashboard and you will see the image has been pushed to the repository
-<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/016-pushimagetoecr.png"></p>
+<img alt="Container" src="/images/4-Deployserverlessapplication/4.2-pushimagetoecr/016-pushimagetoecr.png"></p>
 </li>
 </ul>
 
@@ -1266,19 +1266,19 @@ Default output format [None]: json
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1725264895"></script>
-    <script src="/js/perfect-scrollbar.min.js?1725264895"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1725264895"></script>
-    <script src="/js/jquery.sticky.js?1725264895"></script>
-    <script src="/js/featherlight.min.js?1725264895"></script>
-    <script src="/js/highlight.pack.js?1725264895"></script>
+    <script src="/js/clipboard.min.js?1725359869"></script>
+    <script src="/js/perfect-scrollbar.min.js?1725359869"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1725359869"></script>
+    <script src="/js/jquery.sticky.js?1725359869"></script>
+    <script src="/js/featherlight.min.js?1725359869"></script>
+    <script src="/js/highlight.pack.js?1725359869"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1725264895"></script>
-    <script src="/js/learn.js?1725264895"></script>
-    <script src="/js/hugo-learn.js?1725264895"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1725359869"></script>
+    <script src="/js/learn.js?1725359869"></script>
+    <script src="/js/hugo-learn.js?1725359869"></script>
 
-    <link href="/mermaid/mermaid.css?1725264895" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1725264895"></script>
+    <link href="/mermaid/mermaid.css?1725359869" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1725359869"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

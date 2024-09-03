@@ -52,27 +52,27 @@ Default output format [None]: json
 ```
 
 3. Back to ECR dashboard, choose the repository you created and click on **View push commands**
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/008-pushimagetoecr.png)
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/009-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/008-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/009-pushimagetoecr.png)
 
  - You will see the commands to push the Docker image to the repository. Run the commands in the Terminal at the root directory of the project.
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/010-pushimagetoecr.png)
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/011-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/010-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/011-pushimagetoecr.png)
 
  - Run **docker build -t docker-container-01 .**
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/012-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/012-pushimagetoecr.png)
 
  - You can use **`docker images`** to review the images that have been built
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/013-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/013-pushimagetoecr.png)
 
  - After the build completes, tag your image so you can push the image to our repository
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/014-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/014-pushimagetoecr.png)
 
  - Push your image to the repository
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/015-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/015-pushimagetoecr.png)
 
  - Reload the **ECR** dashboard and you will see the image has been pushed to the repository
-![Container](/images/4-Deployserverlessapplication/4.2-Pushimagetoecr/016-pushimagetoecr.png)
+![Container](/images/4-Deployserverlessapplication/4.2-pushimagetoecr/016-pushimagetoecr.png)
 
 
 
