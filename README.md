@@ -1,4 +1,4 @@
-# Deploy single service with AWS Elastic Container Service and Application Load Balancer
+# A Step-by-Step Guide: Deploy single service with AWS Elastic Container Service and Application Load Balancer
 
 ## 1. Overview
 This repository contains the workshop materials for the first workshop in the First Cloud Journey Bootcamp 2024. The workshop is designed to help you understand the basics of containerized application, particularly AWS Elastic Container Service, AWS Elastic Container Registry, AWS Fargate, Application Load Balancer and how to deploy a single service application on AWS ECS.

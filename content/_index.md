@@ -4,7 +4,7 @@ date :  "`r Sys.Date()`"
 weight : 1 
 chapter : false
 ---
-# Deploy single service with AWS Elastic Container Service and Application Load Balancer
+# A Step-by-Step Guide: Deploy single service with AWS Elastic Container Service and Application Load Balancer
 
 ### Overall
  In this workshop, we will deploy a single service with Elastic Container Service and ALB. Then find out the definition, feature of each service used in this architecture.
