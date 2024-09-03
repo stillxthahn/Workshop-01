@@ -4,7 +4,7 @@
 	"title": "Deploy single service with AWS Elastic Container Service and Application Load Balancer",
 	"tags": [],
 	"description": "",
-	"content": "Deploy single service with AWS Elastic Container Service and Application Load Balancer Overall In this workshop, we will deploy a single service with Elastic Container Service and ALB. Then find out the definition, feature of each service used in this architecture.\nContent Introduction Preparation Create database Deploy single service on ECS Clean up resources "
+	"content": "A Step-by-Step Guide: Deploy single service with AWS Elastic Container Service and Application Load Balancer Overall In this workshop, we will deploy a single service with Elastic Container Service and ALB. Then find out the definition, feature of each service used in this architecture.\nContent Introduction Preparation Create database Deploy single service on ECS Clean up resources "
 },
 {
 	"uri": "//localhost:1313/3-createdatabase/3.1-createdbsubnetgroup/",
